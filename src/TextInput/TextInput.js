@@ -12,9 +12,9 @@ const TextInput = ({ placeholder, value, handleChange, invalid }) => (
       value={value || ""}
       onChange={handleChange}
     />
-    <small id="emailHelp" class="form-text text-muted">
+    <medium id="emailHelp" class="form-text text-muted">
       {invalid ? "Invalid BASIC English" : ""}
-    </small>
+    </medium>
   </div>
 );
 
