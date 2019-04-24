@@ -5,13 +5,16 @@ import styles from "./TextInput.module.css";
 console.log(styles);
 
 const TextInput = ({ placeholder, value, handleChange, invalid }) => (
-  <div className={cn("input-group", styles.main)}>
+  <div className={cn("form-group", styles.main)}>
     <textarea
       className={cn("form-control", { [styles.invalid]: invalid })}
       placeholder={placeholder || "Start typing..."}
       value={value || ""}
       onChange={handleChange}
     />
+    <small id="emailHelp" class="form-text text-muted">
+      {invalid ? "Invalid BASIC English" : ""}
+    </small>
   </div>
 );
 

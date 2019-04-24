@@ -30,7 +30,7 @@ function App() {
       <TextInput
         value={text}
         handleChange={handleInputUpdate}
-        invalid={text === "" ? false : !isValidText(text)}
+        invalid={text === "" ? false : !isValidText(text.trim())}
       />
     </div>
   );
