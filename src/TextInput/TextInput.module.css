@@ -1,0 +1,17 @@
+$invalidColor: red;
+
+.main {
+  width: 100%;
+  min-height: 250px;
+}
+
+.invalid {
+  border-color: red;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem red;
+}
+.invalid:focus {
+  border-color: red;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem red;
+}
