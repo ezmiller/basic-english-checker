@@ -2,7 +2,6 @@ import React from "react";
 import cn from "classnames";
 
 import styles from "./TextInput.module.css";
-console.log(styles);
 
 const TextInput = ({ placeholder, value, handleChange, invalid }) => (
   <div className={cn("form-group", styles.main)}>
