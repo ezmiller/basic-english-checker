@@ -18,7 +18,6 @@ const debounce = (fn, delay) => {
 
 function App() {
   const [text, setText] = useState("");
-  const [valid, setTextIsValid] = useState(true);
 
   const handleInputUpdate = e => {
     const newVal = e.target.value;
@@ -27,7 +26,7 @@ function App() {
 
   return (
     <div className="container">
-      <h3>Can you write in BASIC English?</h3>
+      <h2>Basic English Validator</h2>
       <TextInput
         value={text}
         handleChange={handleInputUpdate}
