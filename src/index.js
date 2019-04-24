@@ -6,16 +6,6 @@ import { isValidText } from "./validator/validator";
 
 import "./styles.css";
 
-const debounce = (fn, delay) => {
-  let timeout = null;
-  return (...args) => {
-    if (timeout) {
-      clearTimeout(timeout);
-    }
-    timeout = setTimeout(() => fn.apply(undefined, args), delay);
-  };
-};
-
 function App() {
   const [text, setText] = useState("");
 
