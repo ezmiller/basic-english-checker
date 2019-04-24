@@ -11,7 +11,7 @@ const TextInput = ({ placeholder, value, handleChange, invalid }) => (
       value={value || ""}
       onChange={handleChange}
     />
-    <medium id="emailHelp" class="form-text text-muted">
+    <medium id="emailHelp" className="form-text text-muted">
       {invalid ? "Invalid BASIC English" : ""}
     </medium>
   </div>
